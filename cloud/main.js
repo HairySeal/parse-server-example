@@ -1,6 +1,6 @@
 
 Parse.Cloud.define('hello', function(req, res) {
   
-  res.success("Working");
+  res.success(req.params.firstVar + " " + req.params.secondVar);
   
 });
